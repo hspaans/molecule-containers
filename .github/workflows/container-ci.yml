@@ -9,4 +9,5 @@ on:
 
 jobs:
   container-ci:
+    name: Reusable Workflow
     uses: hspaans/.github/.github/workflows/container-ci.yml@master
