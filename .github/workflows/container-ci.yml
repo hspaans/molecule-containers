@@ -1,0 +1,12 @@
+---
+name: Container CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  container-ci:
+    uses: hspaans/.github/.github/workflows/container-ci.yml@master
