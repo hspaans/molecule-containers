@@ -35,4 +35,7 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/hspaans/molecule-container-debian:bullseye
+          tags: |
+            ghcr.io/hspaans/molecule-container-debian:bullseye
+            ghcr.io/hspaans/molecule-container-debian:11
+            ghcr.io/hspaans/molecule-container-debian:latest
