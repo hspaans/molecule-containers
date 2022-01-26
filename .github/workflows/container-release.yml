@@ -35,4 +35,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/hspaans/molecule-container-ubuntu:bionic
+          tags: |
+            ghcr.io/hspaans/molecule-container-ubuntu:bionic
+            ghcr.io/hspaans/molecule-container-ubuntu:18.04
