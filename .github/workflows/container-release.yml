@@ -35,4 +35,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/hspaans/molecule-container-debian:buster
+          tags: |
+            ghcr.io/hspaans/molecule-container-debian:buster
+            ghcr.io/hspaans/molecule-container-debian:10
