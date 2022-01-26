@@ -35,4 +35,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64,linux/riscv64
           push: true
-          tags: ghcr.io/hspaans/molecule-container-ubuntu:jammy
+          tags: |
+            ghcr.io/hspaans/molecule-container-ubuntu:jammy
+            ghcr.io/hspaans/molecule-container-ubuntu:22.04
