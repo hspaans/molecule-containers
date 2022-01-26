@@ -35,4 +35,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/hspaans/molecule-container-debian:bookworm
+          tags: |
+            ghcr.io/hspaans/molecule-container-debian:bookworm
+            ghcr.io/hspaans/molecule-container-debian:12
