@@ -38,3 +38,4 @@ jobs:
           tags: |
             ghcr.io/hspaans/molecule-container-ubuntu:focal
             ghcr.io/hspaans/molecule-container-ubuntu:20.04
+            ghcr.io/hspaans/molecule-container-ubuntu:latest
