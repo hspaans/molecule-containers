@@ -1,7 +1,7 @@
 FROM docker.io/fedora:35
 
 LABEL org.opencontainers.image.description="Fedora container for Molecule"
-LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-container-fedora
+LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
 
 # Configure apt and install packages
 # hadolint ignore=DL3033
