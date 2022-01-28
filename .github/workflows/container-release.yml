@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - debian-*
+      - fedora-*
       - ubuntu-*
 
 jobs:
