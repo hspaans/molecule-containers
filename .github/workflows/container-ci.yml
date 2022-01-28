@@ -6,6 +6,10 @@ on:
   push:
     branches:
       - master
+      - centos-*
+      - debian-*
+      - fedora-*
+      - ubuntu-*
 
 jobs:
   container-ci:
