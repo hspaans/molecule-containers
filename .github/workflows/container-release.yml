@@ -4,7 +4,9 @@ name: Container Release
 on:
   push:
     branches:
+      - centos-*
       - debian-*
+      - fedora-*
       - ubuntu-*
 
 jobs:
