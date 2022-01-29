@@ -35,14 +35,18 @@ verifier:
 
 The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support) distribution versions with official support and fall within N and N-1. The *latest*-tag is an experimental tag to test future releases.
 
-| Distribution | Release  | Platforms    | Status      |
-|--------------|----------|--------------|-------------|
-| Debian 10    | buster   | AMD64, ARM64 | Supported   |
-| Debian 11    | bullseye | AMD64, ARM64 | Supported   |
-| Debian 12    | bookworm | AMD64, ARM64 | Development |
-| Ubuntu 18.04 | bionic   | AMD64, ARM64 | LTS         |
-| Ubuntu 20.04 | focal    | AMD64, ARM64 | LTS         |
-| Ubuntu 22.04 | jammy    | AMD64, ARM64 | Development |
+| Distribution | Release        | Platforms    | Status      |
+|--------------|----------------|--------------|-------------|
+| CentOS       | 7              | AMD64, ARM64 | Legacy      |
+| CentOS       | 8              | AMD64, ARM64 | Legacy      |
+| Debian       | buster (10)    | AMD64, ARM64 | Supported   |
+| Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
+| Debian       | bookworm (12)  | AMD64, ARM64 | Development |
+| Fedora       | 34             | AMD64, ARM64 | Supported   |
+| Fedora       | 35             | AMD64, ARM64 | Supported   |
+| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Supported   |
+| Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
+| Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Development |
 
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
