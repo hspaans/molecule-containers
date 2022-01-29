@@ -1,4 +1,4 @@
-FROM docker.io/centos:7.9.2009
+FROM docker.io/centos:8.4.2105
 
 LABEL org.opencontainers.image.description="CentOS container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
