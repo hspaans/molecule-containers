@@ -38,7 +38,7 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 | Distribution | Release        | Platforms    | Status      |
 |--------------|----------------|--------------|-------------|
 | CentOS       | 7              | AMD64, ARM64 | Legacy      |
-| CentOS       | 8              | AMD64, ARM64 | Legacy      |
+| CentOS       | 8              | AMD64, ARM64 | End-of-Life |
 | Debian       | buster (10)    | AMD64, ARM64 | Supported   |
 | Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
 | Debian       | bookworm (12)  | AMD64, ARM64 | Development |
