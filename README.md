@@ -42,11 +42,11 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 | Debian       | buster (10)    | AMD64, ARM64 | Supported   |
 | Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
 | Debian       | bookworm (12)  | AMD64, ARM64 | Development |
-| Fedora       | 34             | AMD64, ARM64 | Supported   |
-| Fedora       | 35             | AMD64, ARM64 | Supported   |
-| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Supported   |
+| Fedora       | 34             | AMD64, ARM64 | Legacy      |
+| Fedora       | 35             | AMD64, ARM64 | Legacy      |
+| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Legacy      |
 | Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
-| Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Development |
+| Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Supported   |
 
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
