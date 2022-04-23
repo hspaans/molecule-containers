@@ -38,3 +38,4 @@ jobs:
           tags: |
             ghcr.io/hspaans/molecule-container-ubuntu:jammy
             ghcr.io/hspaans/molecule-container-ubuntu:22.04
+            ghcr.io/hspaans/molecule-container-ubuntu:latest
