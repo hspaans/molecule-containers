@@ -117,20 +117,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    target-branch: fedora-34
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    target-branch: fedora-34
-    open-pull-requests-limit: 10
-
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
     target-branch: fedora-35
     open-pull-requests-limit: 10
 
