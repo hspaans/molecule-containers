@@ -101,18 +101,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    target-branch: fedora-34
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    target-branch: fedora-34
-
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
     target-branch: fedora-35
 
   - package-ecosystem: github-actions
