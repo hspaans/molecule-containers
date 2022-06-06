@@ -96,15 +96,3 @@ updates:
     schedule:
       interval: weekly
     target-branch: ubuntu-jammy
-
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
-    target-branch: fedora-35
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    target-branch: fedora-35
