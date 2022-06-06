@@ -1,4 +1,4 @@
-FROM docker.io/ubuntu:jammy-20220428
+FROM docker.io/ubuntu:jammy-20220531
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
