@@ -1,4 +1,4 @@
-FROM docker.io/debian:buster-20220622-slim
+FROM docker.io/debian:buster-20220711-slim
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
