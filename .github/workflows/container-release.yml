@@ -38,4 +38,3 @@ jobs:
           push: true
           tags: |
             ghcr.io/hspaans/molecule-container-fedora:35
-            ghcr.io/hspaans/molecule-container-fedora:latest
