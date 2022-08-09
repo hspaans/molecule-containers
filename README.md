@@ -46,7 +46,6 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
-[ubuntu]: https://ubuntu.org
 [docker-debian10-ansible]: https://github.com/geerlingguy/docker-debian10-ansible
 [geerlingguy]: https://github.com/geerlingguy
 [molecule]: https://github.com/ansible-community/molecule
