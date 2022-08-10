@@ -35,18 +35,21 @@ verifier:
 
 The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support) distribution versions with official support and fall within N and N-1. The *latest*-tag is an experimental tag to test future releases.
 
-| Distribution | Release  | Platforms    | Status      |
-|--------------|----------|--------------|-------------|
-| Debian 10    | buster   | AMD64, ARM64 | Supported   |
-| Debian 11    | bullseye | AMD64, ARM64 | Supported   |
-| Debian 12    | bookworm | AMD64, ARM64 | Development |
-| Ubuntu 18.04 | bionic   | AMD64, ARM64 | LTS         |
-| Ubuntu 20.04 | focal    | AMD64, ARM64 | LTS         |
-| Ubuntu 22.04 | jammy    | AMD64, ARM64 | Development |
+| Distribution | Release        | Platforms    | Status      |
+|--------------|----------------|--------------|-------------|
+| CentOS       | 7              | AMD64, ARM64 | Legacy      |
+| CentOS       | 8              | AMD64, ARM64 | End-of-Life |
+| Debian       | buster (10)    | AMD64, ARM64 | Supported   |
+| Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
+| Debian       | bookworm (12)  | AMD64, ARM64 | Development |
+| Fedora       | 34             | AMD64, ARM64 | End-of-Life |
+| Fedora       | 35             | AMD64, ARM64 | Legacy      |
+| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Legacy      |
+| Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
+| Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Supported   |
 
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
-[ubuntu]: https://ubuntu.org
 [docker-debian10-ansible]: https://github.com/geerlingguy/docker-debian10-ansible
 [geerlingguy]: https://github.com/geerlingguy
 [molecule]: https://github.com/ansible-community/molecule
