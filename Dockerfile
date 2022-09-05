@@ -1,4 +1,4 @@
-FROM docker.io/ubuntu:bionic-20220801
+FROM docker.io/ubuntu:bionic-20220829
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
