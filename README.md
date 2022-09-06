@@ -44,7 +44,7 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 | Debian       | bookworm (12)  | AMD64, ARM64 | Development |
 | Fedora       | 34             | AMD64, ARM64 | End-of-Life |
 | Fedora       | 35             | AMD64, ARM64 | Legacy      |
-| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Legacy      |
+| Ubuntu       | bionic (18.04) | AMD64, ARM64 | No-updates  |
 | Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
 | Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Supported   |
 
