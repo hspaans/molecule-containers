@@ -1,4 +1,4 @@
-FROM docker.io/debian:bookworm-20221004-slim
+FROM docker.io/debian:bookworm-20221024-slim
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
