@@ -42,15 +42,13 @@ The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support)
 | Debian       | buster (10)    | AMD64, ARM64 | Supported   |
 | Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
 | Debian       | bookworm (12)  | AMD64, ARM64 | Development |
-| Fedora       | 34             | AMD64, ARM64 | End-of-Life |
 | Fedora       | 35             | AMD64, ARM64 | End-of-Life |
-| Ubuntu       | bionic (18.04) | AMD64, ARM64 | Legacy      |
+| Ubuntu       | bionic (18.04) | AMD64, ARM64 | No-updates  |
 | Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
 | Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Supported   |
 
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
-[ubuntu]: https://ubuntu.org
 [docker-debian10-ansible]: https://github.com/geerlingguy/docker-debian10-ansible
 [geerlingguy]: https://github.com/geerlingguy
 [molecule]: https://github.com/ansible-community/molecule

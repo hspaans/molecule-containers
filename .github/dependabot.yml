@@ -65,18 +65,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    target-branch: ubuntu-bionic
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    target-branch: ubuntu-bionic
-
-  - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
     target-branch: ubuntu-focal
 
   - package-ecosystem: github-actions
