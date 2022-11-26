@@ -1,4 +1,4 @@
-FROM docker.io/debian:bullseye-20221024-slim
+FROM docker.io/debian:bullseye-20221114-slim
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
