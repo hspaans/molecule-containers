@@ -1,4 +1,4 @@
-FROM docker.io/ubuntu:focal-20230126
+FROM docker.io/ubuntu:focal-20230301
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
