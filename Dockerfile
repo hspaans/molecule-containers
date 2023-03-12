@@ -21,6 +21,6 @@ ENV DEBIAN_FRONTEND=dialog
 # Make sure systemd doesn't start agettys on tty[1-6].
 RUN rm -f /lib/systemd/system/multi-user.target.wants/getty.target
 
-VOLUME ["/sys/fs/cgroup"]
+VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 
 CMD ["/lib/systemd/systemd"]
