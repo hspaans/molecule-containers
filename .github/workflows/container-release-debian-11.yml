@@ -1,13 +1,13 @@
 ---
-name: Container Release (Ubuntu 24.04)
+name: Container Release (Debian 11)
 
 on:
   push:
     branches:
       - master
     paths:
-      - "ubuntu-24.04/Dockerfile"
-      - ".github/workflows/container-release-ubuntu-2404.yml"
+      - "debian-11/Dockerfile"
+      - ".github/workflows/container-release-debian-11.yml"
   workflow_dispatch:
 
 jobs:
@@ -39,5 +39,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: ubuntu-24.04/Dockerfile
-          tags: ghcr.io/hspaans/molecule-containers:ubuntu-24.04
+          file: debian-11/Dockerfile
+          tags: ghcr.io/hspaans/molecule-containers:debian-11
