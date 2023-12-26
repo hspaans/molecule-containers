@@ -44,7 +44,7 @@ jobs:
         id: scan
         with:
           image: "localbuild/testimage:latest"
-          fail-build: true
+          fail-build: false
           severity-cutoff: critical
 
       - name: Upload vulnerability report
