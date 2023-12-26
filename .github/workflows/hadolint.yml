@@ -24,8 +24,6 @@ jobs:
   hadolint:
     name: Run hadolint scanning
     runs-on: ubuntu-latest
-    env:
-      HADOLINT_RECURSIVE: "true"
     permissions:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
@@ -37,7 +35,6 @@ jobs:
       - name: Run hadolint
         uses: hadolint/hadolint-action@54c9adbab1582c2ef04b2016b760714a4bfde3cf
         with:
-          dockerfile: ./Dockerfile
           recursive: true
           format: sarif
           output-file: hadolint-results.sarif
