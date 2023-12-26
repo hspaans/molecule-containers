@@ -18,20 +18,30 @@ updates:
     target-branch: centos-7
 
   - package-ecosystem: docker
-    directory: /
-    schedule:
-      interval: weekly
     target-branch: master
-
-  - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+      day: saturday
     groups:
       GitHub-Actions:
         patterns:
           - "*"
+    assignees:
+      - "hspaans"
+
+  - package-ecosystem: github-actions
     target-branch: master
+    directory: /
+    schedule:
+      interval: weekly
+      day: saturday
+    groups:
+      GitHub-Actions:
+        patterns:
+          - "*"
+    assignees:
+      - "hspaans"
 
   - package-ecosystem: docker
     directory: /
