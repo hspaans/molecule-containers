@@ -10,12 +10,12 @@ name: Hadolint
 
 on:
   push:
-    branches: [ "master", "v*" ]
+    branches: ["master"]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "master" ]
+    branches: ["master"]
   schedule:
-    - cron: '31 22 * * 1'
+    - cron: "31 22 * * 1"
 
 permissions:
   contents: read
@@ -35,7 +35,7 @@ jobs:
       - name: Run hadolint
         uses: hadolint/hadolint-action@54c9adbab1582c2ef04b2016b760714a4bfde3cf
         with:
-          dockerfile: ./Dockerfile
+          recursive: true
           format: sarif
           output-file: hadolint-results.sarif
           no-fail: true
