@@ -40,7 +40,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: false
           file: Dockerfile.ubuntu-24.04
-          tags:
-            - ghcr.io/hspaans/molecule-container-ubuntu:24.04
-            - ghcr.io/hspaans/molecule-container-ubuntu:noble
-            - ghcr.io/hspaans/molecule-container-ubuntu:devel
+          tags: |
+            ghcr.io/hspaans/molecule-container-ubuntu:24.04
+            ghcr.io/hspaans/molecule-container-ubuntu:noble
+            ghcr.io/hspaans/molecule-container-ubuntu:devel
