@@ -1,4 +1,4 @@
-FROM docker.io/debian:bullseye-20231218-slim
+FROM docker.io/debian:bookworm-20231030-slim
 
 LABEL org.opencontainers.image.description="Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
@@ -21,6 +21,6 @@ ENV DEBIAN_FRONTEND=dialog
 # Make sure systemd doesn't start agettys on tty[1-6].
 RUN rm -f /lib/systemd/system/multi-user.target.wants/getty.target
 
-VOLUME ["/sys/fs/cgroup"]
+VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 
 CMD ["/lib/systemd/systemd"]
