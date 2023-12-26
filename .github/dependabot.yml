@@ -11,10 +11,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    groups:
-      GitHub-Actions:
-        patterns:
-          - "*"
     target-branch: centos-7
 
   - package-ecosystem: docker
@@ -24,7 +20,7 @@ updates:
       interval: weekly
       day: saturday
     groups:
-      GitHub-Actions:
+      Docker:
         patterns:
           - "*"
     assignees:
@@ -53,10 +49,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    groups:
-      GitHub-Actions:
-        patterns:
-          - "*"
     target-branch: debian-buster
 
   - package-ecosystem: docker
