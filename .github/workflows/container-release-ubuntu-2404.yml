@@ -37,7 +37,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v5
         with:
-          platforms: linux/amd64
-          push: false
+          platforms: linux/amd64,linux/arm64
+          push: true
           file: Dockerfile.ubuntu-24.04
           tags: ghcr.io/hspaans/molecule-containers:ubuntu-24.04
