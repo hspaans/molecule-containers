@@ -14,7 +14,6 @@ on:
     paths:
       - "ubuntu-22.04/Dockerfile"
       - ".github/workflows/container-release-ubuntu-2204.yml"
-  workflow_dispatch:
 
 jobs:
   build-test:
