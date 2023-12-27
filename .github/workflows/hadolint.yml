@@ -35,7 +35,7 @@ jobs:
       - name: Run hadolint
         uses: hadolint/hadolint-action@54c9adbab1582c2ef04b2016b760714a4bfde3cf
         with:
-          recursive: true
+          dockerfile: "Dockerfile*"
           format: sarif
           output-file: hadolint-results.sarif
           no-fail: true
