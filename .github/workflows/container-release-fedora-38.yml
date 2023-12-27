@@ -14,7 +14,6 @@ on:
     paths:
       - "fedora-38/Dockerfile"
       - ".github/workflows/container-release-fedora-38.yml"
-  workflow_dispatch:
 
 jobs:
   build-test:

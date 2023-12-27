@@ -14,7 +14,6 @@ on:
     paths:
       - "debian-11/Dockerfile"
       - ".github/workflows/container-release-debian-11.yml"
-  workflow_dispatch:
 
 jobs:
   build-test:
