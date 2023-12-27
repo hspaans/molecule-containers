@@ -1,4 +1,4 @@
-FROM docker.io/fedora:38
+FROM docker.io/fedora:39
 
 LABEL org.opencontainers.image.description="Fedora container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
