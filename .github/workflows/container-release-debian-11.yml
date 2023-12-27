@@ -57,4 +57,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           file: Dockerfile.debian-11
-          tags: ghcr.io/hspaans/molecule-containers:debian-11
+          tags: |
+            ghcr.io/hspaans/molecule-containers:debian-bullseye
+            ghcr.io/hspaans/molecule-containers:debian-11

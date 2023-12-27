@@ -57,4 +57,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           file: Dockerfile.ubuntu-22.04
-          tags: ghcr.io/hspaans/molecule-containers:ubuntu-22.04
+          tags: |
+            ghcr.io/hspaans/molecule-containers:ubuntu-jammy
+            ghcr.io/hspaans/molecule-containers:ubuntu-22.04
