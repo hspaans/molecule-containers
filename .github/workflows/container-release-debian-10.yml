@@ -6,13 +6,13 @@ on:
     branches:
       - master
     paths:
-      - "debian-10/Dockerfile"
+      - "Dockerfile.debian-10"
       - ".github/workflows/container-release-debian-10.yml"
   pull_request:
     branches:
       - master
     paths:
-      - "debian-10/Dockerfile"
+      - "Dockerfile.debian-10"
       - ".github/workflows/container-release-debian-10.yml"
 
 jobs:
@@ -25,14 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run tests
-        working-directory: debian-10
-        run: |
-          if [ -f docker-compose.test.yml ]; then
-            docker-compose --file docker-compose.test.yml build
-            docker-compose --file docker-compose.test.yml run sut
-          else
-            docker build . --file Dockerfile
-          fi
+        run: docker build . --file Dockerfile.debian-10
 
   build-release:
     name: Container Release
@@ -63,5 +56,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: debian-10/Dockerfile
+          file: Dockerfile.debian-10
           tags: ghcr.io/hspaans/molecule-containers:debian-10
