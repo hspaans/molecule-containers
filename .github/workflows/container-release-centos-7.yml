@@ -1,20 +1,23 @@
 ---
-name: Container Release (Ubuntu 20.04)
+name: Container Release (CentOS 7)
 
 on:
   push:
     branches:
       - master
     paths:
-      - "ubuntu-20.04/Dockerfile"
-      - ".github/workflows/container-release-ubuntu-2004.yml"
+      - "centos-7/Dockerfile"
+      - ".github/workflows/container-release-centos-7.yml"
   pull_request:
     branches:
       - master
     paths:
-      - "ubuntu-20.04/Dockerfile"
-      - ".github/workflows/container-release-ubuntu-2004.yml"
+      - "centos-7/Dockerfile"
+      - ".github/workflows/container-release-centos-7.yml"
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build-test:
@@ -26,13 +29,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run tests
-        working-directory: ubuntu-20.04
+        working-directory: centos-7
         run: |
           if [ -f docker-compose.test.yml ]; then
             docker-compose --file docker-compose.test.yml build
             docker-compose --file docker-compose.test.yml run sut
           else
-            docker build . --file Dockerfile
+            docker build . --file centos-7/Dockerfile
           fi
 
   build-release:
@@ -64,5 +67,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: ubuntu-20.04/Dockerfile
-          tags: ghcr.io/hspaans/molecule-containers:ubuntu-20.04
+          file: centos-7/Dockerfile
+          tags: ghcr.io/hspaans/molecule-containers:centos-7

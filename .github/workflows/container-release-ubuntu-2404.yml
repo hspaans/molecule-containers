@@ -8,13 +8,38 @@ on:
     paths:
       - "ubuntu-24.04/Dockerfile"
       - ".github/workflows/container-release-ubuntu-2404.yml"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "ubuntu-24.04/Dockerfile"
+      - ".github/workflows/container-release-ubuntu-2404.yml"
   workflow_dispatch:
 
 jobs:
+  build-test:
+    name: Container Test Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Run tests
+        working-directory: ubuntu-24.04
+        run: |
+          if [ -f docker-compose.test.yml ]; then
+            docker-compose --file docker-compose.test.yml build
+            docker-compose --file docker-compose.test.yml run sut
+          else
+            docker build . --file Dockerfile
+          fi
+
   build-release:
     name: Build and Release
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    needs: build-test
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
 
     steps:
       - name: Checkout Code
