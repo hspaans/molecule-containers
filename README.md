@@ -1,10 +1,28 @@
 # Containers for Molecule
 
-An [Debian][debian] based container image for testing [Ansible][ansible] Roles with [Molecule][molecule]. The [repository][docker-debian10-ansible] from [Jeff Geerling][geerlingguy] was taken as starting point to create the repository.
+For testing [Ansible][ansible] roles with [Molecule][molecule], it is useful to have a container image with Ansible installed. This repository contains a collection of container images for testing Ansible roles with Molecule. The container images are available on [GitHub Container Registry](https://ghcr.io) and a current list of available images can be found on the [container overview page](https://github.com/hspaans/molecule-containers/pkgs/container/molecule-containers/versions?filters%5Bversion_type%5D=tagged).
+
+> **Note:** The container images are **NOT** intended for production use and should only be used for testing purposes. The security of the container images is not guaranteed and the images are not updated with the latest security patches.
+
+## Container images and versions
+
+Distributions are based on [LTS](https://en.wikipedia.org/wiki/Long-term_support) versions with official support and fall within N and N-1. Older images are removed from the registry when they reach end-of-life.
+
+Currently, the following distributions are supported:
+* Debian 10 (buster) - `ghcr.io/hspaans/molecule-containers:debian-10`
+* Debian 11 (bullseye) - `ghcr.io/hspaans/molecule-containers:debian-11`
+* Debian 12 (bookworm) - `ghcr.io/hspaans/molecule-containers:debian-12`
+* Fedora 38 - `ghcr.io/hspaans/molecule-containers:fedora-38`
+* Fedora 39 - `ghcr.io/hspaans/molecule-containers:fedora-39`
+* Ubuntu 20.04 (focal) - `ghcr.io/hspaans/molecule-containers:ubuntu-20.04`
+* Ubuntu 22.04 (jammy) - `ghcr.io/hspaans/molecule-containers:ubuntu-22.04`
+* Ubuntu 24.04 (noble) - `ghcr.io/hspaans/molecule-containers:ubuntu-24.04`
+
+> **Note:** Previous images were stored in the `hspaans/molecule-container-<distribution>:<version>` package repository on GitHube. These images are no longer maintained and will be removed in the future as they become end-of-life. It is recommended to use the new images from the `ghcr.io/hspaans/molecule-containers:<distribution>-<version>` package repository.
 
 ## Example Molecule scenario
 
-The example `molecule.yml` below is a scenario to run test on Debian 11 (Bullseye).
+The example `molecule.yml` below is a scenario to run test on Debian 12 and Ubuntu 22.04.
 
 ```yml
 ---
@@ -17,38 +35,32 @@ lint: |
   yamllint `git ls-files '*.yaml' '*.yml'`
   ansible-lint
   flake8
+
 platforms:
-  - name: debian-bullseye
-    image: "ghcr.io/hspaans/molecule-container-debian:bullseye"
+  - name: debian-12
+    image: "ghcr.io/hspaans/molecule-containers:debian-12"
     command: ""
+    cgroupns_mode: host
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
     privileged: true
     pre_build_image: true
+
+  - name: ubuntu-22.04
+    image: "ghcr.io/hspaans/molecule-containers:ubuntu-22.04"
+    command: ""
+    cgroupns_mode: host
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    privileged: true
+    pre_build_image: true
+
 provisioner:
   name: ansible
 verifier:
   name: testinfra
 ```
 
-## Versions
-
-The container is based on [LTS](https://en.wikipedia.org/wiki/Long-term_support) distribution versions with official support and fall within N and N-1. The *latest*-tag is an experimental tag to test future releases.
-
-| Distribution | Release        | Platforms    | Status      |
-|--------------|----------------|--------------|-------------|
-| CentOS       | 7              | AMD64, ARM64 | Legacy      |
-| CentOS       | 8              | AMD64, ARM64 | End-of-Life |
-| Debian       | buster (10)    | AMD64, ARM64 | Supported   |
-| Debian       | bullseye (11)  | AMD64, ARM64 | Supported   |
-| Debian       | bookworm (12)  | AMD64, ARM64 | Development |
-| Fedora       | 35             | AMD64, ARM64 | End-of-Life |
-| Ubuntu       | bionic (18.04) | AMD64, ARM64 | End-of-Life |
-| Ubuntu       | focal (20.04)  | AMD64, ARM64 | Supported   |
-| Ubuntu       | jammy (22.04)  | AMD64, ARM64 | Supported   |
-
 [ansible]: https://github.com/ansible/ansible
 [debian]: https://debian.org
-[docker-debian10-ansible]: https://github.com/geerlingguy/docker-debian10-ansible
-[geerlingguy]: https://github.com/geerlingguy
-[molecule]: https://github.com/ansible-community/molecule
+[molecule]: https://github.com/ansible/molecule
