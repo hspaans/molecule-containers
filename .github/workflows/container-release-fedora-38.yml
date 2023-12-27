@@ -1,19 +1,19 @@
 ---
-name: Container Release (Ubuntu 20.04)
+name: Container Release (Fedora 38)
 
 on:
   push:
     branches:
       - master
     paths:
-      - "ubuntu-20.04/Dockerfile"
-      - ".github/workflows/container-release-ubuntu-2004.yml"
+      - "fedora-38/Dockerfile"
+      - ".github/workflows/container-release-fedora-38.yml"
   pull_request:
     branches:
       - master
     paths:
-      - "ubuntu-20.04/Dockerfile"
-      - ".github/workflows/container-release-ubuntu-2004.yml"
+      - "fedora-38/Dockerfile"
+      - ".github/workflows/container-release-fedora-38.yml"
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run tests
-        working-directory: ubuntu-20.04
+        working-directory: fedora-38
         run: |
           if [ -f docker-compose.test.yml ]; then
             docker-compose --file docker-compose.test.yml build
@@ -64,5 +64,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: ubuntu-20.04/Dockerfile
-          tags: ghcr.io/hspaans/molecule-containers:ubuntu-20.04
+          file: fedora-38/Dockerfile
+          tags: ghcr.io/hspaans/molecule-containers:fedora-38
