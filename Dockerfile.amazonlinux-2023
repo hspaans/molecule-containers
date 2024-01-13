@@ -1,6 +1,6 @@
 FROM docker.io/amazonlinux:2023.3.20240108.0
 
-LABEL org.opencontainers.image.description="Fedora container for Molecule"
+LABEL org.opencontainers.image.description="Amazon Linux 2023 container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
 
 # Configure apt and install packages
