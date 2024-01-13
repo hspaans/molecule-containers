@@ -15,6 +15,8 @@ Currently, the following distributions are supported:
 * Debian 12 (bookworm) - `ghcr.io/hspaans/molecule-containers:debian-12`
 * Fedora 38 - `ghcr.io/hspaans/molecule-containers:fedora-38`
 * Fedora 39 - `ghcr.io/hspaans/molecule-containers:fedora-39`
+* Oracle Linux 8 - `ghcr.io/hspaans/molecule-containers:oraclelinux-8`
+* Oracle Linux 9 - `ghcr.io/hspaans/molecule-containers:oraclelinux-9`
 * Ubuntu 20.04 (focal) - `ghcr.io/hspaans/molecule-containers:ubuntu-20.04`
 * Ubuntu 22.04 (jammy) - `ghcr.io/hspaans/molecule-containers:ubuntu-22.04`
 * Ubuntu 24.04 (noble) - `ghcr.io/hspaans/molecule-containers:ubuntu-24.04`
