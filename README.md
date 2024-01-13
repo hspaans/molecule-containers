@@ -9,6 +9,7 @@ For testing [Ansible][ansible] roles with [Molecule][molecule], it is useful to 
 Distributions are based on [LTS](https://en.wikipedia.org/wiki/Long-term_support) versions with official support and fall within N and N-1. Older images are removed from the registry when they reach end-of-life.
 
 Currently, the following distributions are supported:
+* Amazon Linux 2023 - `ghcr.io/hspaans/molecule-containers:amazonlinux-2023`
 * Debian 10 (buster) - `ghcr.io/hspaans/molecule-containers:debian-10`
 * Debian 11 (bullseye) - `ghcr.io/hspaans/molecule-containers:debian-11`
 * Debian 12 (bookworm) - `ghcr.io/hspaans/molecule-containers:debian-12`
