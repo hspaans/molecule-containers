@@ -1,5 +1,5 @@
 ---
-name: Container Release (Oracle Linux 7)
+name: Container Release (Oracle Linux 9)
 
 on:
   push:
