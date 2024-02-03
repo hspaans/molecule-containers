@@ -5,24 +5,31 @@ updates:
     target-branch: master
     directory: /
     schedule:
-      interval: weekly
-      day: saturday
+      interval: daily
     groups:
       Docker:
         patterns:
           - "*"
-    assignees:
-      - "hspaans"
+    ignore:
+      - dependency-name: "amazonlinux"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "debian"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "ubuntu"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "fedora"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "oraclelinux"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "rockylinux"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     target-branch: master
     directory: /
     schedule:
-      interval: weekly
-      day: saturday
+      interval: monthly
     groups:
       GitHub-Actions:
         patterns:
           - "*"
-    assignees:
-      - "hspaans"
