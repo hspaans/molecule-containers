@@ -1,4 +1,4 @@
-FROM docker.io/amazonlinux:2023.3.20240312.0
+FROM docker.io/amazonlinux:2023.4.20240401.1
 
 LABEL org.opencontainers.image.description="Amazon Linux 2023 container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
