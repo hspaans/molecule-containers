@@ -13,10 +13,6 @@ updates:
     ignore:
       - dependency-name: "amazonlinux"
         update-types: ["version-update:semver-major"]
-      - dependency-name: "debian"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "ubuntu"
-        update-types: ["version-update:semver-major"]
       - dependency-name: "fedora"
         update-types: ["version-update:semver-major"]
       - dependency-name: "oraclelinux"
