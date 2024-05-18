@@ -7,7 +7,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      Docker:
+      docker:
         patterns:
           - "*"
     ignore:
@@ -26,6 +26,6 @@ updates:
     schedule:
       interval: monthly
     groups:
-      GitHub-Actions:
+      github-actions:
         patterns:
           - "*"
