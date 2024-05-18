@@ -1,0 +1,17 @@
+FROM docker.io/alpine:3.19.0
+
+LABEL org.opencontainers.image.description="Alpine container for Molecule"
+LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
+
+# Configure apt and install packages
+# hadolint ignore=DL3033
+RUN apk -y install systemd systemd-sysv python3 \
+    # Clean up
+    && apk clean all
+
+# Make sure systemd doesn't start agettys on tty[1-6].
+RUN rm -f /lib/systemd/system/multi-user.target.wants/getty.target
+
+VOLUME ["/sys/fs/cgroup"]
+
+CMD ["/lib/systemd/systemd"]

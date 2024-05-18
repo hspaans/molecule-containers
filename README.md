@@ -24,6 +24,11 @@ Currently, the following distributions are supported:
 * Ubuntu 22.04 (jammy) - `ghcr.io/hspaans/molecule-containers:ubuntu-22.04`
 * Ubuntu 24.04 (noble) - `ghcr.io/hspaans/molecule-containers:ubuntu-24.04`
 
+Experimental images are available for the following distributions:
+* Alpine 3.17 - `ghcr.io/hspaans/molecule-containers:alpine-3.17`
+* Alpine 3.18 - `ghcr.io/hspaans/molecule-containers:alpine-3.18`
+* Alpine 3.19 - `ghcr.io/hspaans/molecule-containers:alpine-3.19`
+
 > **Note:** Previous images were stored in the `hspaans/molecule-container-<distribution>:<version>` package repository on GitHube. These images are no longer maintained and will be removed in the future as they become end-of-life. It is recommended to use the new images from the `ghcr.io/hspaans/molecule-containers:<distribution>-<version>` package repository.
 
 ## Example Molecule scenario
