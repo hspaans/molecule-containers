@@ -5,9 +5,9 @@ LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-contai
 
 # Configure apt and install packages
 # hadolint ignore=DL3033
-RUN apk -y install systemd systemd-sysv python3 \
+RUN apk add systemd systemd-sysv python3 \
     # Clean up
-    && apk clean all
+    && apk cache clean
 
 # Make sure systemd doesn't start agettys on tty[1-6].
 RUN rm -f /lib/systemd/system/multi-user.target.wants/getty.target
