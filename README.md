@@ -25,7 +25,6 @@ Currently, the following distributions are supported:
 * Ubuntu 24.04 (noble) - `ghcr.io/hspaans/molecule-containers:ubuntu-24.04`
 
 Experimental images are available for the following distributions:
-* Alpine 3.17 - `ghcr.io/hspaans/molecule-containers:alpine-3.17`
 * Alpine 3.18 - `ghcr.io/hspaans/molecule-containers:alpine-3.18`
 * Alpine 3.19 - `ghcr.io/hspaans/molecule-containers:alpine-3.19`
 
