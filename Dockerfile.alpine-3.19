@@ -1,4 +1,4 @@
-FROM docker.io/alpine:3.19.0
+FROM docker.io/alpine:3.19.1
 
 LABEL org.opencontainers.image.description="Alpine container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
