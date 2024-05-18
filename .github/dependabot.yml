@@ -6,13 +6,7 @@ updates:
     directory: /
     schedule:
       interval: daily
-    groups:
-      docker:
-        patterns:
-          - "*"
     ignore:
-      - dependency-name: "alpine"
-        update-types: ["version-update:semver-major"]
       - dependency-name: "amazonlinux"
         update-types: ["version-update:semver-major"]
       - dependency-name: "fedora"
