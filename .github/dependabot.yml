@@ -7,6 +7,8 @@ updates:
     schedule:
       interval: daily
     ignore:
+      - dependency-name: "alpine"
+        update-types: ["version-update:semver-major"]
       - dependency-name: "amazonlinux"
         update-types: ["version-update:semver-major"]
       - dependency-name: "fedora"
