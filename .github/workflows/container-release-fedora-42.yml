@@ -56,5 +56,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: Dockerfile.fedora-41
+          file: Dockerfile.fedora-42
           tags: ghcr.io/hspaans/molecule-containers:fedora-42
