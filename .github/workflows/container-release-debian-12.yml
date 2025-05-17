@@ -18,7 +18,7 @@ on:
 jobs:
   build-test:
     name: Container Test Build
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the code
@@ -29,7 +29,7 @@ jobs:
 
   build-release:
     name: Container Release
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     needs: build-test
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
 
