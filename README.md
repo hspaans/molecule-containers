@@ -11,7 +11,6 @@ Distributions are based on [LTS](https://en.wikipedia.org/wiki/Long-term_support
 
 * [![Container Release (Amazon Linux 2023)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-amazonlinux-2023.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-amazonlinux-2023.yml)
 * [![Container Release (Debian 12)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-12.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-12.yml)
-* [![Container Release (Fedora 40)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-40.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-40.yml)
 * [![Container Release (Fedora 41)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-41.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-41.yml)
 * [![Container Release (Fedora 42)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-42.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-fedora-42.yml)
 * [![Container Release (Oracle Linux 8)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-oraclelinux-8.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-oraclelinux-8.yml)
