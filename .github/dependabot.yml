@@ -5,17 +5,11 @@ updates:
     directory: /
     schedule:
       interval: daily
-    groups:
-      docker-alpine:
-        patterns:
-          - "alpine"
-        update-types: ["patch"]
-      docker-debian:
-        patterns:
-          - "debian"
-      docker-ubuntu:
-        patterns:
-          - "ubuntu"
+    ignore:
+      - dependency-name: "alpine"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: "amazonlinux"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
 
   - package-ecosystem: github-actions
     directory: /
