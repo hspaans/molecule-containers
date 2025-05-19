@@ -10,6 +10,12 @@ updates:
         patterns:
           - "alpine"
         update-types: ["patch"]
+      docker-debian:
+        patterns:
+          - "debian"
+      docker-ubuntu:
+        patterns:
+          - "ubuntu"
 
   - package-ecosystem: github-actions
     directory: /
