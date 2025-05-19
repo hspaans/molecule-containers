@@ -5,17 +5,6 @@ updates:
     directory: /
     schedule:
       interval: daily
-    ignore:
-      - dependency-name: "alpine"
-        update-types: ["version-update:semver-major","version-update:semver-minor"]
-      - dependency-name: "amazonlinux"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "fedora"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "oraclelinux"
-        update-types: ["version-update:semver-major"]
-      - dependency-name: "rockylinux"
-        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
