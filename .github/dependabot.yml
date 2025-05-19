@@ -5,6 +5,17 @@ updates:
     directory: /
     schedule:
       interval: daily
+    groups:
+      docker-alpine:
+        patterns:
+          - "alpine"
+        update-types: ["patch"]
+      docker-debian:
+        patterns:
+          - "debian"
+      docker-ubuntu:
+        patterns:
+          - "ubuntu"
 
   - package-ecosystem: github-actions
     directory: /
