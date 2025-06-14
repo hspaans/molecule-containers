@@ -23,7 +23,8 @@ jobs:
           contains(steps.metadata.outputs.package-ecosystem, 'docker') &&
           (
             steps.metadata.outputs.update-type == 'version-update:semver-patch' ||
-            contains(steps.metadata.outputs.dependency-names, 'debian')
+            contains(steps.metadata.outputs.dependency-names, 'debian') ||
+            contains(steps.metadata.outputs.dependency-names, 'ubuntu')
           )
         run: gh pr merge --auto --squash "$PR_URL"
         env:
