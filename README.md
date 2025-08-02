@@ -13,6 +13,7 @@ The following table lists the available container images, their distribution, an
 
 | Image Tag | Distribution | State |
 |-----------|--------------|---------|
+| `almalinux-10` | AlmaLinux 10 | [![Container Release (AlmaLinux 10)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-almalinux-10.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-almalinux-10.yml) |
 | `alpine-3.19` | Alpine 3.19 | [![Container Release (Alpine 3.19)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.19.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.19.yml) |
 | `alpine-3.20` | Alpine 3.20 | [![Container Release (Alpine 3.20)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.20.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.20.yml) |
 | `alpine-3.21` | Alpine 3.21 | [![Container Release (Alpine 3.21)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.21.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.21.yml) |
