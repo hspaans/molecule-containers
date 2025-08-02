@@ -3,7 +3,7 @@ FROM docker.io/oraclelinux:10
 LABEL org.opencontainers.image.description="Oracle Linux 10 container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
 
-# Configure apt and install packages
+# Configure yum and install packages
 # hadolint ignore=DL3033
 RUN yum -y install systemd systemd-sysv python3 \
     # Clean up
