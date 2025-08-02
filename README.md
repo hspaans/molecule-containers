@@ -13,6 +13,7 @@ The following table lists the available container images, their distribution, an
 
 | Image Tag | Distribution | State |
 |-----------|--------------|---------|
+| `alpine-3.22` | Alpine 3.22 | [![Container Release (Alpine 3.22)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.22.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-alpine-3.22.yml) |
 | `amazonlinux-2023` | Amazon Linux 2023  | [![Container Release (Amazon Linux 2023)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-amazonlinux-2023.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-amazonlinux-2023.yml) |
 | `debian-12` | Debian 12 (Bookworm) | [![Container Release (Debian 12)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-12.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-12.yml) |
 | `debian-13` | Debian 13 (Trixie) | [![Container Release (Debian 13)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-13.yml/badge.svg)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-debian-13.yml) |
