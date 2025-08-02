@@ -3,7 +3,7 @@ FROM docker.io/alpine:3.22.1
 LABEL org.opencontainers.image.description="Alpine container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
 
-# Configure apt and install packages
+# Configure apk and install packages
 # hadolint ignore=DL3033
 RUN apk --no-cache add python3 \
     # Clean up
