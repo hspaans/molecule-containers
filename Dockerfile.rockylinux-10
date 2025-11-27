@@ -1,4 +1,4 @@
-FROM docker.io/rockylinux/rockylinux:10.0.20250606
+FROM docker.io/rockylinux/rockylinux:10.1.20251126
 
 LABEL org.opencontainers.image.description="Rocky Linux 10 container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
