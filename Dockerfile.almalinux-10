@@ -1,4 +1,4 @@
-FROM docker.io/almalinux:10.0
+FROM docker.io/almalinux:10.1
 
 LABEL org.opencontainers.image.description="AlmaLinux 10 container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
