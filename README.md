@@ -34,6 +34,7 @@ The following table lists the available container images, their distribution, an
 | `rockylinux-10` | Rocky Linux 10 | [![Container Release (Rocky Linux 10)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-rockylinux-10.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-rockylinux-10.yml) |
 | `ubuntu-22.04` | Ubuntu 22.04 (Jammy Jellyfish) | [![Container Release (Ubuntu 22.04)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2204.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2204.yml) |
 | `ubuntu-24.04` | Ubuntu 24.04 (Noble Numbat) | [![Container Release (Ubuntu 24.04)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2404.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2404.yml) |
+| `ubuntu-26.04` | Ubuntu 26.04 (Resolute Raccoon) | [![Container Release (Ubuntu 26.04)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2604.yml/badge.svg?branch=master)](https://github.com/hspaans/molecule-containers/actions/workflows/container-release-ubuntu-2604.yml) |
 
 ## Example Molecule scenario
 
