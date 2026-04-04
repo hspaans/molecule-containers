@@ -7,13 +7,13 @@ on:
       - master
     paths:
       - "Dockerfile.alpine-3.23"
-      - ".github/workflows/container-release-alpine-3.23.yml"
   pull_request:
     branches:
       - master
     paths:
       - "Dockerfile.alpine-3.23"
-      - ".github/workflows/container-release-alpine-3.23.yml"
+
+  workflow_dispatch:
 
 jobs:
   build-test:
@@ -33,7 +33,7 @@ jobs:
     name: Container Release
     runs-on: ubuntu-24.04
     needs: build-test
-    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     permissions:
       contents: read
       packages: write
