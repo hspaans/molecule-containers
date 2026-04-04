@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.almalinux-10"
+      - ".github/workflows/container-release-almalinux-10.yml"
 
   workflow_dispatch:
 

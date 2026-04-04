@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.alpine-3.19"
+      - ".github/workflows/container-release-alpine-3.19.yml"
 
   workflow_dispatch:
 

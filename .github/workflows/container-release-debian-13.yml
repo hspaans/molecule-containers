@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.debian-13"
+      - ".github/workflows/container-release-debian-13.yml"
 
   workflow_dispatch:
 

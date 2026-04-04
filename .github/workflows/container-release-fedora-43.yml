@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.fedora-43"
+      - ".github/workflows/container-release-fedora-43.yml"
 
   workflow_dispatch:
 

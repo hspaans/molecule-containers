@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.ubuntu-26.04"
+      - ".github/workflows/container-release-ubuntu-2604.yml"
 
   workflow_dispatch:
 

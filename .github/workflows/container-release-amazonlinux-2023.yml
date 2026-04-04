@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.amazonlinux-2023"
+      - ".github/workflows/container-release-amazonlinux-2023.yml"
 
   workflow_dispatch:
 

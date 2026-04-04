@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.rockylinux-10"
+      - ".github/workflows/container-release-rockylinux-10.yml"
 
   workflow_dispatch:
 

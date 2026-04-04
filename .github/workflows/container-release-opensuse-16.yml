@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.opensuse-16"
+      - ".github/workflows/container-release-opensuse-16.yml"
 
   workflow_dispatch:
 

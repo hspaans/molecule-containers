@@ -12,6 +12,7 @@ on:
       - master
     paths:
       - "Dockerfile.oraclelinux-9"
+      - ".github/workflows/container-release-oraclelinux-9.yml"
 
   workflow_dispatch:
 
