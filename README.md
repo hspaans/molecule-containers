@@ -51,7 +51,7 @@ status of the latest build for that image.
 
 ## Example Molecule scenario
 
-The example `molecule.yml` below is a scenario to run test on Debian 13 and
+The example `molecule.yml` below is a scenario to run tests on Debian 13 and
 Ubuntu 26.04.
 
 ```yml

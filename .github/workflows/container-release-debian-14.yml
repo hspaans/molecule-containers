@@ -1,18 +1,18 @@
 ---
-name: Container Release (Debian 13)
+name: Container Release (Debian 14)
 
 on:
   push:
     branches:
       - master
     paths:
-      - "Dockerfile.debian-13"
+      - "Dockerfile.debian-14"
   pull_request:
     branches:
       - master
     paths:
-      - "Dockerfile.debian-13"
-      - ".github/workflows/container-release-debian-13.yml"
+      - "Dockerfile.debian-14"
+      - ".github/workflows/container-release-debian-14.yml"
 
   workflow_dispatch:
 
