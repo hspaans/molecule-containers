@@ -1,18 +1,18 @@
 ---
-name: Container Release (Debian 12)
+name: Container Release (Debian 14)
 
 on:
   push:
     branches:
       - master
     paths:
-      - "Dockerfile.debian-12"
+      - "Dockerfile.debian-14"
   pull_request:
     branches:
       - master
     paths:
-      - "Dockerfile.debian-12"
-      - ".github/workflows/container-release-debian-12.yml"
+      - "Dockerfile.debian-14"
+      - ".github/workflows/container-release-debian-14.yml"
 
   workflow_dispatch:
 
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Run tests
-        run: docker build . --file Dockerfile.debian-12
+        run: docker build . --file Dockerfile.debian-14
 
   build-release:
     name: Container Release
@@ -57,8 +57,8 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          file: Dockerfile.debian-12
+          file: Dockerfile.debian-14
           tags: |
-            ghcr.io/hspaans/molecule-containers:debian-oldstable
-            ghcr.io/hspaans/molecule-containers:debian-bookworm
-            ghcr.io/hspaans/molecule-containers:debian-12
+            ghcr.io/hspaans/molecule-containers:debian-testing
+            ghcr.io/hspaans/molecule-containers:debian-forky
+            ghcr.io/hspaans/molecule-containers:debian-14
