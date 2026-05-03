@@ -16,6 +16,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build-test:
     name: Container Test Build
@@ -31,6 +34,9 @@ jobs:
   build-release:
     name: Container Release
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
     needs: build-test
     if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
 
