@@ -16,6 +16,10 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build-test:
     name: Container Test Build
