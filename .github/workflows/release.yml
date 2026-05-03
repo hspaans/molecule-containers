@@ -1,0 +1,36 @@
+---
+name: Create Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release on GitHub
+    runs-on: ubuntu-latest
+    permissions:
+      # Required to create tags and releases
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+        with:
+          # Fetches all tags for versioning
+          fetch-depth: 0
+
+      - name: Calculate and Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. Get the latest tag, default to v100 if none exists
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v100")
+
+          # 2. Extract number, increment it, and format back to 'vXXX'
+          VERSION_NUM=${LATEST_TAG#v}
+          NEW_VERSION_NUM=$((VERSION_NUM + 1))
+          NEW_TAG="v$NEW_VERSION_NUM"
+
+          # 3. Create the release using GitHub CLI
+          gh release create "$NEW_TAG" \
+            --title "Release $NEW_TAG" \
+            --generate-notes
