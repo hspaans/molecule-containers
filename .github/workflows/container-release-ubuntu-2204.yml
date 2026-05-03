@@ -1,6 +1,9 @@
 ---
 name: Container Release (Ubuntu 22.04)
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -33,6 +36,9 @@ jobs:
     runs-on: ubuntu-24.04
     needs: build-test
     if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout Code
