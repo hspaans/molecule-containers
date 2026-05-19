@@ -10,7 +10,7 @@ updates:
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: "amazonlinux"
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
-      - dependency-name: "rockylinux"
+      - dependency-name: "rockylinux/rockylinux"
         update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
