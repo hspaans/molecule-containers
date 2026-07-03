@@ -1,4 +1,4 @@
-FROM docker.io/ubuntu:resolute-20260413
+FROM docker.io/ubuntu:resolute-20260627
 
 LABEL org.opencontainers.image.description="Ubuntu 26.04 (Resolute Raccoon) Container for Molecule"
 LABEL org.opencontainers.image.source=https://github.com/hspaans/molecule-containers
